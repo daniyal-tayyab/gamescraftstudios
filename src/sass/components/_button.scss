@@ -1,0 +1,33 @@
+.button {
+  padding: 0.8rem 1.6rem;
+  color: $color-white;
+  border-radius: 2rem;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.default {
+  border: 2px solid $color-white;
+  background-color: transparent;
+  background-color: transparent;
+  transition: all 0.15s;
+
+  &:hover {
+    background: $color-gradient;
+    border: 2px solid transparent;
+  }
+}
+
+.inverted {
+  border: 2px solid transparent;
+  background: $color-gradient;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: all 0.15s;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+}

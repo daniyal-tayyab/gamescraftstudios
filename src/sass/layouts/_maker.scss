@@ -1,0 +1,25 @@
+.maker {
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin-bottom: 4rem;
+  }
+
+  &__heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  @media (max-width: 800px) {
+    padding: 2rem;
+  }
+}

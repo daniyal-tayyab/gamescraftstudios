@@ -1,0 +1,189 @@
+.news-hero {
+  width: 100vw;
+  background-image: url(https://www.sandbox.game/img/27_About/bg-blog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 6rem;
+
+  &__back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      margin-right: 8px;
+    }
+
+    span {
+      font-size: 1.3rem;
+      color: #fff;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+
+      @media (max-width: 430px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    &--right {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+
+      &__search {
+        display: flex;
+        align-items: center;
+        border: 1px solid hsla(0, 0%, 100%, 0.149);
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-right: 20px;
+
+        &__icon {
+          height: 100%;
+
+          img {
+            margin-top: 2px;
+          }
+        }
+
+        &__input {
+          height: 100%;
+          width: 300px;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: #5f5753;
+          margin-left: 10px;
+
+          @media (max-width: 1080px) {
+            width: 500;
+          }
+
+          @media (max-width: 680px) {
+            width: 70vw;
+          }
+        }
+      }
+
+      &__social {
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+
+        img {
+          cursor: pointer;
+
+          &:not(:last-child) {
+            margin-right: 5px;
+          }
+        }
+
+        @media (max-width: 680px) {
+          margin-top: 15px;
+        }
+      }
+
+      @media (max-width: 1080px) {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 680px) {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 1080px) {
+      flex-direction: column;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    align-items: stretch;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    &__image {
+      flex: 2;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    &__content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 1rem;
+
+      &__upper {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-size: 1.2rem;
+          color: #00b0ff;
+          margin-bottom: 2rem;
+          margin-top: 1rem;
+        }
+
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 1.4rem;
+          color: #c5d0d7;
+
+          @media (max-width: 700px) {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+
+      &__lower {
+        margin-top: auto;
+
+        &__time {
+          color: #707b8a;
+          border-bottom: 1px solid #707b8a;
+          font-size: 1.3rem;
+        }
+
+        &__social {
+          display: flex;
+          align-items: center;
+
+          img {
+            cursor: pointer;
+          }
+
+          img:not(:last-child) {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
+}

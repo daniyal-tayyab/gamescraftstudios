@@ -1,0 +1,27 @@
+.sidebar {
+  width: 55px;
+  height: calc(100vh - 50px);
+  margin-top: 50px;
+  background-color: $color-black-coal;
+  position: fixed;
+  top: 0;
+  border-right: 1px solid $color-grey-border;
+  transition: width 0.15s ease;
+  padding: 4px 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.hover {
+  width: 230px;
+}

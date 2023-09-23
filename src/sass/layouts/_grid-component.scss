@@ -1,0 +1,47 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(18, 24px);
+  grid-template-rows: repeat(18, 24px);
+  border: 2px solid #25b8ed;
+}
+
+.grid-item {
+  border: 1px solid black;
+  width: 24px;
+  height: 24px;
+  background-color: #464e63;
+}
+
+.grid-item img {
+  width: 24px;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+
+  border: 1px solid black;
+  z-index: 999;
+}
+
+.grid-item:hover .popover {
+  display: block;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+  margin: 10px;
+}

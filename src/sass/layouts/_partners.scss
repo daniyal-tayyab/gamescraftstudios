@@ -1,0 +1,46 @@
+.home-partners {
+  padding: 0 100px;
+  margin-top: 20px 0;
+  margin-bottom: 100px;
+
+  &__heading {
+    font-size: 3rem;
+    line-height: 1.5;
+
+    span {
+      font-size: 1.6rem;
+      color: $color-sky-blue;
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  &__logo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-top: 20px;
+
+    &__logo {
+      max-height: 72px;
+      max-width: 125px;
+    }
+
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 650px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 800px) {
+    height: auto;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0px 30px;
+  }
+}

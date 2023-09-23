@@ -1,0 +1,40 @@
+.single-game {
+  margin-left: 55px;
+  width: calc(100vw - 55px);
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  @include respond(tab-port) {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .game-content {
+    padding: 4rem;
+  }
+
+  .lower-content {
+    padding: 4rem;
+    padding-top: 2rem;
+    .heading {
+        width: 100%;
+        // border-bottom: 1px solid #9b9d9f;
+        h3 {
+            font-size: 2rem;
+            width: max-content;
+            border-bottom: 2px solid $color-secondary;
+        }
+
+        p {
+            font-size: 1.7rem;
+            margin-top: 2rem;
+        }
+
+        button {
+          margin-top: 2rem;
+        }
+    }
+  }
+}

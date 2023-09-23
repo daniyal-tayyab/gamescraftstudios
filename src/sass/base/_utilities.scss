@@ -1,0 +1,13 @@
+.u-display-none {
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.u-hide {
+  display: none;
+}
+
+.txt-center {
+  text-align: center;
+}

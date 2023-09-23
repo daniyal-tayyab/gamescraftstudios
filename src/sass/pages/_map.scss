@@ -1,0 +1,14 @@
+.map {
+  margin-left: 55px;
+  height: calc(100vh - 50px);
+  width: calc(100vw - 55px);
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  @include respond(tab-port) {
+    width: 100vw;
+    margin-left: 0;
+  }
+}

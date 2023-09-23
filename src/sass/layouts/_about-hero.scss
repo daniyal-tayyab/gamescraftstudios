@@ -1,0 +1,40 @@
+.about-hero {
+  min-height: 370px;
+  background-image: linear-gradient(to right, #05050548, #05050548),
+    url(https://i.ibb.co/pxB77rf/common.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      font-size: 4rem;
+
+      @media (max-width: 600px) {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      max-width: 403px;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 800px) {
+    // background-position: left;
+  }
+
+  @media (max-width: 900px) {
+    padding-left: 2rem;
+  }
+}

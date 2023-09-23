@@ -1,0 +1,35 @@
+.home-services {
+    margin: 8rem;
+    @include flex-center;
+    flex-direction: column;
+    gap: 2rem;
+
+
+    .services-card-section {
+        display: grid !important;
+        grid-template-columns: auto auto auto;
+        // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 20px;
+
+        @media (max-width: 1400px) {
+            grid-template-columns: auto auto;
+            gap: 30px;
+        }
+
+        @media (max-width: 750px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        margin: 8rem 20rem;
+    }
+
+    @media (max-width: 940px) {
+        margin: 8rem 4rem;
+    }
+
+    // @media (max-width: 700px) {
+    //     margin: 8rem 4rem;
+    // }
+}

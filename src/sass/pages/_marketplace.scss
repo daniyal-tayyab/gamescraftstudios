@@ -1,0 +1,46 @@
+.marketplace {
+  margin-left: 55px;
+  height: calc(100vh - 50px);
+  width: calc(100vw - 55px);
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem;
+
+  &__header {
+    &__title {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+
+    &__description {
+      font-size: 1.5rem;
+    }
+
+    &__category-container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin-top: 4rem;
+      gap: 2rem;
+
+      @media (max-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (max-width: 850px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    width: 100vw;
+    margin-left: 0;
+  }
+}

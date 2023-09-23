@@ -1,0 +1,16 @@
+.home-hero {
+  height: 47rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    height: 80rem;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+}

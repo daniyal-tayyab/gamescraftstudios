@@ -1,0 +1,36 @@
+.home-portfolio {
+    margin: 8rem;
+    @include flex-center;
+    flex-direction: column;
+    
+    .portfolio-section {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 2rem;
+        margin-top: 2rem;
+
+        @media (max-width: 1020px) {
+            grid-template-columns: auto auto auto;
+        }
+
+        @media (max-width: 926px) {
+            grid-template-columns: auto auto;
+        }
+
+        @media (max-width: 650px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        margin: 8rem 20rem;
+    }
+
+    @media (max-width: 940px) {
+        margin: 8rem 4rem;
+    }
+
+    // @media (max-width: 700px) {
+    //     margin: 8rem 4rem;
+    // }
+}

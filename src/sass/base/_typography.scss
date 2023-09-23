@@ -1,0 +1,103 @@
+.section-heading, .heading-aside {
+    font-size: 3rem;
+    text-align: center;
+    width: max-content;
+    display: flex; 
+    gap: 10px;
+    margin-bottom: 2rem;
+    position: relative;
+
+    .heading-span {
+        display: block;
+        background: $color-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 80%;
+        border-color: $color-secondary transparent !important;
+        border-style: solid !important;
+        border-width: 4px 7px 0px 7px !important;
+        left: 50%;
+        top: 100%;
+        -webkit-transform: translate(-50%, 100%);
+        transform: translate(-50%, 100%);
+    }
+}
+
+.heading-aside {
+    &::after {
+        position: absolute;
+        content: "";
+        width: 20%;
+        border-color: $color-secondary transparent !important;
+        border-style: solid !important;
+        border-width: 4px 7px 0px 7px !important;
+        left: 50%;
+        top: 100%;
+        -webkit-transform: translate(-50%, 100%);
+        transform: translate(-50%, 100%);
+        display: none;
+    }
+}
+
+.gr-txt {
+    background: $color-gradient !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    font-weight: bold !important;
+}
+
+.heading-main, .heading-about {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.heading-main {
+    span {
+        display: block;
+    }
+}
+
+.sub-heading {
+    font-size: 3rem;
+}
+
+.heading-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-all {
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $color-secondary;
+        margin-top: 3px;
+        transition: all 0.15s ease;
+    }
+
+    &:hover::after {
+        width: 90%;
+    }
+    
+    svg {
+        color: $color-secondary;
+        margin-bottom: -6px;
+        font-size: 2.2rem;
+        transform: rotate(-90deg);
+    }
+}

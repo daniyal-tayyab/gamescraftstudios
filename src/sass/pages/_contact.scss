@@ -1,0 +1,61 @@
+.contact {
+  margin-left: 55px;
+  width: calc(100vw - 55px);
+  margin-top: 50px;
+
+  .contact-info {
+    margin: 8rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    place-items: center;
+    gap: 2rem;
+    padding: 2rem;
+
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-sidemenu-background;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 30rem;
+      height: 16.4rem;
+
+      .icon {
+        color: $color-secondary;
+        font-size: 3rem;
+      }
+
+      .location {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+
+      .location-desc {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    background-color: $color-sidemenu-background;
+    margin: 2rem 8rem;
+
+    @media (max-width: 1000px) {
+      margin: 2rem 3rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    width: 100vw;
+    margin-left: 0;
+  }
+}

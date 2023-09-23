@@ -1,0 +1,66 @@
+.header {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $color-black-coal;
+  border-bottom: 1px solid $color-grey-border;
+  z-index: 99999999999999;
+
+  @include center-space-between;
+
+  &__logo {
+    margin-left: 1.5rem;
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .logo-svg {
+      width: 13.5rem;
+    }
+
+  }
+
+  &__menu {
+    @include center-space-between;
+
+    & > * {
+      margin: 0 1rem;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0 1rem;
+      letter-spacing: 1px;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: $color-white;
+        transition: width 0.15s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    &__icon-container {
+      padding: 0.5rem 0.6rem;
+      padding-bottom: 0.2rem;
+      margin: 0 0.5rem;
+      margin-top: 2px;
+      border-radius: 0.4rem;
+      transition: all 0.15s;
+
+      &:hover {
+        background-color: $color-grey-icon-hover;
+      }
+    }
+  }
+}
