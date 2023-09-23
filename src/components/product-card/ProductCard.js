@@ -1,6 +1,8 @@
 import React from 'react';
 
 import "./product-card.css";
+import Button from '../Button';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({service}) => {
     const {title, desc, video, icon} = service;
@@ -18,9 +20,14 @@ const ProductCard = ({service}) => {
     ></video>
     </div>
     <div className="card-info">
-      <img className='card-icon' src={icon} alt={title}/>
+      {/* <img className='card-icon' src={icon} alt={title}/> */}
       <p className="text-title">{title} </p>
       <p className="text-body">{desc}</p>
+      <div className='card-footer'>
+        <Link to="/services">
+          <Button buttonType="default">View more</Button>
+        </Link>
+      </div>
     </div>
   </div>
   )

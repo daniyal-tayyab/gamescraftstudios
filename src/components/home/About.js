@@ -6,11 +6,15 @@ import {Link} from "react-router-dom";
 import Button from '../Button';
 
 import logo from "../../images/logou.png";
+import useWindowDimensions from '../../hooks/getWindowsDimensions';
 
 
 
 const About = ({reference}) => {
   gsap.registerPlugin(ScrollTrigger);
+  const { width } = useWindowDimensions();
+
+  let startEndPoint = width > 1900 ? "500px" : "400px";
 
   useEffect(() => {
     const element = reference.current;
@@ -27,8 +31,8 @@ const About = ({reference}) => {
         y: 0,
         scrollTrigger: {
           trigger: element.querySelector(".about"),
-          start: "400px center",
-          end: "400px top",
+          start: `${startEndPoint} center`,
+          end: `${startEndPoint} top`,
           scrub: true
         }
       }

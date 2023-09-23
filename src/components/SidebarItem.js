@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const SidebarItem = ({ hoverSidebar, item, handleToggleDrawer }) => {
+const SidebarItem = ({ hoverSidebar, item, handleToggleDrawer = () => null }) => {
   const [hover, setHover] = useState(false);
 
   const { title, Icon, Active, to } = item;
+
 
   const handleHover = () => {
     setHover((prevState) => !prevState);
@@ -18,7 +19,8 @@ const SidebarItem = ({ hoverSidebar, item, handleToggleDrawer }) => {
       onMouseLeave={handleHover}
       onClick={handleToggleDrawer}
     >
-      <div className="sidebar-item__icon">{hover ? <Active /> : <Icon />}</div>
+      {/* <div className="sidebar-item__icon">{hover ? <Active /> : <Icon />}</div> */}
+      <div className="sidebar-item__icon"><Icon /></div>
       {hoverSidebar && (
         <div
           className={`sidebar-item__title ${
@@ -28,7 +30,7 @@ const SidebarItem = ({ hoverSidebar, item, handleToggleDrawer }) => {
           {title}
         </div>
       )}
-      {hoverSidebar === undefined && (
+      {/* {hoverSidebar === undefined && (
         <div
           className={`sidebar-item__title ${
             hover && ".sidebar-item__title__hover"
@@ -36,7 +38,7 @@ const SidebarItem = ({ hoverSidebar, item, handleToggleDrawer }) => {
         >
           {title}
         </div>
-      )}
+      )} */}
     </NavLink>
   );
 };

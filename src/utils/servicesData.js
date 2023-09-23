@@ -3,6 +3,7 @@ export const servicesData = [
     image:
       "https://i.ibb.co/9HN3Gbz/unity.png",
     title: "Unity Engine",
+    pos: "center",
     desc: "At GamesCraft Studio, Unity isn't just a tool; it's our canvas for crafting remarkable gaming experiences. Our team's proficiency in Unity extends to: Advanced Scripting, Performance Optimization, Asset Integration, Multiplatform Development, AR/VR Development",
     services: [
       {
@@ -31,6 +32,7 @@ export const servicesData = [
     image:
       "https://i.ibb.co/4SZmYTm/3-D-Modeling.jpg",
     title: "3D Modeling and Texturing",
+    pos: "center",
     desc: `Our 3D modeling and texturing services are the foundation of creating visually appealing game assets. We specialize in: Character Modeling, Environment Modeling, Asset Optimization, High-quality Texturing`,
     services: [
       {
@@ -55,6 +57,7 @@ export const servicesData = [
     image:
       "https://i.ibb.co/ZY1ZrYR/Texturing.jpg",
     title: "Environment and Level Design",
+    pos: "center",
     desc: "Creating immersive game environments is crucial for player engagement. Our environment and level design services encompass: World Building, Level Layouts, Puzzle and Challenge Design, Atmosphere and Lighting",
     services: [
       {
@@ -77,8 +80,9 @@ export const servicesData = [
   },
   {
     image:
-      "https://i.ibb.co/zZjm3zj/Environment-and-Level-Design.png",
+      "https://i.ibb.co/8MSkhT8/3515672.jpg",
     title: "Character Animation",
+    pos: "top",
     desc: `Animation breathes life into your game's characters, making them relatable and engaging. Our character animation services include: Idle and Movement Animations, Combat Animations, Emotion and Expression, Interaction Animations`,
     services: [
       {
@@ -103,6 +107,7 @@ export const servicesData = [
     image:
       "https://i.ibb.co/09dXTtC/Visual-Effects.png",
     title: "Special Effects",
+    pos: "center",
     desc: "Visual effects can make or break a game's immersion. Our special effects services encompass: Particle Effects, Weather Effects, UI and HUD Effects, Physics-based Effects",
     services: [
       {
@@ -127,6 +132,7 @@ export const servicesData = [
     image:
       "https://i.ibb.co/BHDWs17/Unreal-Engine-2.jpg",
     title: "Unreal Engine",
+    pos: "center",
     desc: "Unreal Engine is where we unleash the full potential of cutting-edge graphics and immersive gameplay. Our mastery of Unreal Engine includes: High-Fidelity Graphics, Blueprint System, VR/AR Development, Realistic Physics, Multiplayer Integration",
     services: [
       {
@@ -155,6 +161,7 @@ export const servicesData = [
     image:
       "https://i.ibb.co/k97pD57/Software-Expertise.jpg",
     title: "Software Expertise",
+    pos: "center",
     desc: "GamesCraft Studio is well-versed in a wide range of industry-standard software, including: Blender, Maya, 3ds Max, Unity, Unreal Engine",
     services: [
       {

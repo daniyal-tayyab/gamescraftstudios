@@ -80,11 +80,14 @@ const Container = styled.div`
   }
 `;
 
-const Image = styled.img`
+const Image = styled.div`
   width: 100%;
   height: 258px;
   object-fit: cover;
   border-radius: 10px;
+  background: url(${props => props.bg});
+  background-position: ${props => props.pos};
+  background-size: cover;
 
 
   
@@ -102,7 +105,8 @@ const Image = styled.img`
 const ImageSlide = ({ item }) => {
   return (
     <Container>
-      <Image src={item.image} alt="nan" />
+      {/* <Image src={item.image} alt="nan" /> */}
+      <Image bg={item.image} pos={item.pos} />
       <h5>{item.title}</h5>
       <p>{item.desc}</p>
     </Container>

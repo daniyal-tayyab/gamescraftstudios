@@ -14,10 +14,7 @@ export const portfolio = [
         id: "2",
         image: 'https://i.ibb.co/7bV949D/0-DCE1-CA0-E9-DB-4968-9376-A2-DB7-B46-BF91.png',
         name: 'Beach Fight',
-        desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem`,
+        desc: `Beach Fight is a pushing game where you will have to place the Pushers at the right time and push your opponent to the end and win. The player can choose from 3 different Bikini Girls and place them on track - the bigger the Pusher, the stronger the push - but also takes longer time to deploy - so choose and place them wisely!`,
         genre: 'Casual',
         releaseDate: '17th November 2021',
         rating: 4.8,
