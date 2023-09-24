@@ -43,6 +43,10 @@ a {
   color: inherit;
 }
 
+.active {
+  color: #fff;
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -280,6 +284,8 @@ a {
   width: 230px;
   margin-top: 50px;
   height: 100vh;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 .drawer__layout {
   width: 230px;
@@ -1190,7 +1196,7 @@ button, input {
   justify-content: center;
 }
 .home-about .left img {
-  width: 30rem;
+  width: 24rem;
 }
 .home-about .right {
   display: flex;

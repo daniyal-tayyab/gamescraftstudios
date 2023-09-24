@@ -30,7 +30,7 @@ const SidebarItem = ({ hoverSidebar, item, handleToggleDrawer = () => null }) =>
           {title}
         </div>
       )}
-      {/* {hoverSidebar === undefined && (
+      {hoverSidebar === undefined && (
         <div
           className={`sidebar-item__title ${
             hover && ".sidebar-item__title__hover"
@@ -38,7 +38,7 @@ const SidebarItem = ({ hoverSidebar, item, handleToggleDrawer = () => null }) =>
         >
           {title}
         </div>
-      )} */}
+      )}
     </NavLink>
   );
 };

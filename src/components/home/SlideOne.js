@@ -106,7 +106,7 @@ const SlideOne = () => {
           Welcome to gamescraft studio, where creativity knows no bounds, and every click, tap, or swipe leads to a new adventure!
         </Description>
         <Button buttonType="inverted">
-          <Link to="/avatar" style={{ color: "#fff" }}>
+          <Link to="/contact-us" style={{ color: "#fff" }}>
             Let's Create Together
           </Link>
         </Button>
