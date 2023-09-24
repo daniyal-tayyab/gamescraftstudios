@@ -32,7 +32,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_kjzbt1o', 'template_fzs60lq', form.current, 'PR2AJn2Uj-oCCxPqq')
+    if(!formFields.user_email) {
+      alert("All fields must be filled");
+      return;
+    }
+    // emailjs.sendForm('service_kjzbt1o', 'template_fzs60lq', form.current, 'PR2AJn2Uj-oCCxPqq')
+    emailjs.sendForm('service_0g0iczg', 'template_w3b4ovq', form.current, '9zbenPh0GwhJWsEBf')
     .then((result) => {
         console.log(result.text);
     }, (error) => {
@@ -81,13 +86,13 @@ const Contact = () => {
                           <input class="app-form-control gr-txt" placeholder="NAME" value="Gamescraft Studios" />
                           </div>
                           <div class="app-form-group">
-                          <input class="app-form-control" placeholder="EMAIL" name="user_email" value={user_email} onChange={(e) => handleChange(e)} />
+                          <input class="app-form-control" placeholder="EMAIL" name="user_email" value={user_email} onChange={(e) => handleChange(e)} required/>
                           </div>
                           <div class="app-form-group">
-                          <input class="app-form-control" placeholder="Name" name="user_name" value={user_name} onChange={(e) => handleChange(e)} />
+                          <input class="app-form-control" placeholder="Name" name="user_name" value={user_name} onChange={(e) => handleChange(e)} required/>
                           </div>
                           <div class="app-form-group message">
-                          <input class="app-form-control" placeholder="MESSAGE" name="message" value={message} onChange={(e) => handleChange(e)} />
+                          <input class="app-form-control" placeholder="MESSAGE" name="message" value={message} onChange={(e) => handleChange(e)} required/>
                           </div>
                           <div class="app-form-group buttons">
                           <button class="app-form-button" onClick={(e) => handleSubmit(e)}>SEND</button>
