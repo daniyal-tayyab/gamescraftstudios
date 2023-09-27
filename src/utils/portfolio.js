@@ -99,6 +99,54 @@ export const portfolio = [
         price: '0.00',
         link: "https://apps.apple.com/us/app/tap-hop-adventure/id6451442430"
     },
+    {
+        id: "10",
+        image: 'https://i.ibb.co/0rLqphQ/unnamed-2.webp',
+        name: 'Windy Paratroopers',
+        desc: `Adjust and aim with your catapult, and release to shoot your paratroopers.. Open your parachute and navigate to land score a perfect landing and fight enemies to take over an island.`,
+        genre: 'Arcade',
+        releaseDate: '3rd Ausgust 2022',
+        rating: 4.8,
+        price: '0.00',
+        link: "https://play.google.com/store/apps/details?id=com.tinykrakengames.windy.paratroppers",
+        publisher: "Tiny Kraken Games"
+    },
+    {
+        id: "11",
+        image: 'https://i.ibb.co/mzVWQkd/unnamed.webp',
+        name: 'Magnet Man',
+        desc: `The Magnet man attracts everything towards himself while escaping giants. Release to blast all objects back and kill the giants chasing you.`,
+        genre: 'Arcade',
+        releaseDate: '10th October 2022',
+        rating: 4.8,
+        price: '0.00',
+        link: "https://play.google.com/store/apps/details?id=com.tinykrakengames.magnet.man",
+        publisher: "Tiny Kraken Games"
+    },
+    {
+        id: "12",
+        image: 'https://i.ibb.co/W5yKqQT/unnamed-1.webp',
+        name: 'Earthquake Tester',
+        desc: `Make the building safe by adding structural parts. Tap the earthquake button to test your structure. Win and earn if it does not fall.`,
+        genre: 'Arcade',
+        releaseDate: '6th September 2022',
+        rating: 4.9,
+        price: '0.00',
+        link: "https://play.google.com/store/apps/details?id=com.tk.EarthQuake",
+        publisher: "Tiny Kraken Games"
+    },
+    {
+        id: "13",
+        image: 'https://i.ibb.co/vvsvPMc/unnamed.webp',
+        name: 'Cube Battleship',
+        desc: `Build a base with your deck. Place your buildings on the map to attack and defend your territory. Use your weapon cards to aim and attack on the enemy grounds to conquer. Protect your King, castle and defenses, level up your heroes deck and win PvP battles!`,
+        genre: 'Strategy',
+        releaseDate: '8th December 2022',
+        rating: 5,
+        price: '0.00',
+        link: "https://play.google.com/store/apps/details?id=com.tinykrakengames.secret.wars",
+        publisher: "Tiny Kraken Games"
+    },
     // {
     //     id: "10",
     //     image: 'https://i.ibb.co/fCWJHPn/48-A36500-AC75-4-A8-F-A542-CA406705-A0-D8.png',

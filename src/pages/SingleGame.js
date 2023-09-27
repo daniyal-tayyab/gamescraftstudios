@@ -80,7 +80,7 @@ const SingleGame = () => {
     window.scrollTo({left: 0, top: 0, behavior: "smooth"});
   }, []);
 
-  const {name, image, desc, genre, releaseDate, rating, price, link} = game;
+  const {name, image, desc, genre, releaseDate, rating, price, link, publisher} = game;
 //   console.log("RATING: ", typeof Number(rating));
   return (
     <main className='single-game'>
@@ -97,6 +97,7 @@ const SingleGame = () => {
                     <Rating defaultValue={5} size="large" readOnly />
                     <p style={{fontSize: "1.5rem"}}>Price: <span className='gr-txt'>${price}</span></p>
                     <p>Genre: <span className='gr-txt'>{genre}</span></p>
+                    <p>Publisher: <span className='gr-txt'>{publisher}</span></p>
                     <p>Release Date: <span className='gr-txt'>{releaseDate}</span></p>
                     <a href={link} target="_blank">
                       <Button buttonType="default">Play now</Button>
