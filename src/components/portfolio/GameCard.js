@@ -52,7 +52,7 @@ const GameCard = ({ item }) => {
   }, []);
 
   return (
-    <Link to={`/single-game/${id-1}`}>
+    <Link to={`/single-game/${id}`}>
       <Container>
         <Image bg={image} />
         <h3>{name}</h3>

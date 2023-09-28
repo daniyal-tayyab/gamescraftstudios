@@ -8,7 +8,8 @@ export const portfolio = [
         releaseDate: '8th August 2022',
         rating: 4.8,
         price: '0.00',
-        link: "https://apps.apple.com/app/blend-battles-epic-battle/id1633086180"
+        link: "https://apps.apple.com/app/blend-battles-epic-battle/id1633086180",
+        publisher: "App Central"
     },
     {
         id: "2",
@@ -19,44 +20,45 @@ export const portfolio = [
         releaseDate: '17th November 2021',
         rating: 4.8,
         price: '0.00',
-        link: "https://apps.apple.com/us/app/beach-fight/id1593685370"
+        link: "https://apps.apple.com/us/app/beach-fight/id1593685370",
+        publisher: "App Central"
 
     },
+    // {
+    //     id: "3",
+    //     image: 'https://i.ibb.co/943czRq/unnamed-2.webp',
+    //     name: 'People Money',
+    //     desc: `Runner game with crowd formation with upgrade mechanics.`,
+    //     genre: 'Racing',
+    //     releaseDate: '2nd April 2023',
+    //     rating: 4.5,
+    //     price: '0.00',
+    //     link: "https://play.google.com/store/apps/details?id=com.games.PeopleMoney"
+    // },
+    // {
+    //     id: "4",
+    //     image: 'https://i.ibb.co/Lp3Wfn2/unnamed-1.webp',
+    //     name: 'DMV Manager',
+    //     desc: `Idle arcade game of DMV manager where you play as an office in-charge and serve multiple customers by printing vehicle's number plates.`,
+    //     genre: 'Role Playing',
+    //     releaseDate: '17th April 2023',
+    //     rating: 4.7,
+    //     price: '0.00',
+    //     link: "https://play.google.com/store/apps/details?id=com.creativefungames.dmvmanager"
+    // },
+    // {
+    //     id: "5",
+    //     image: 'https://i.ibb.co/tpvNpdB/unnamed-1.webp',
+    //     name: 'Idle Pawsome Tycoon',
+    //     desc: `Idle Pet Clinic is the ultimate game for animal lovers where the players take on the role of a compassionate veterinarian and can build their very own pet clinic. Players can provide essential services like grooming, bathing, vaccination, and nail cutting to adorable pets in need. `,
+    //     genre: 'Casual',
+    //     releaseDate: '11th July 2023',
+    //     rating: 4.6,
+    //     price: '0.00',
+    //     link: "https://play.google.com/store/apps/details?id=com.creativefungames.pawtoon"
+    // },
     {
         id: "3",
-        image: 'https://i.ibb.co/943czRq/unnamed-2.webp',
-        name: 'People Money',
-        desc: `Runner game with crowd formation with upgrade mechanics.`,
-        genre: 'Racing',
-        releaseDate: '2nd April 2023',
-        rating: 4.5,
-        price: '0.00',
-        link: "https://play.google.com/store/apps/details?id=com.games.PeopleMoney"
-    },
-    {
-        id: "4",
-        image: 'https://i.ibb.co/Lp3Wfn2/unnamed-1.webp',
-        name: 'DMV Manager',
-        desc: `Idle arcade game of DMV manager where you play as an office in-charge and serve multiple customers by printing vehicle's number plates.`,
-        genre: 'Role Playing',
-        releaseDate: '17th April 2023',
-        rating: 4.7,
-        price: '0.00',
-        link: "https://play.google.com/store/apps/details?id=com.creativefungames.dmvmanager"
-    },
-    {
-        id: "5",
-        image: 'https://i.ibb.co/tpvNpdB/unnamed-1.webp',
-        name: 'Idle Pawsome Tycoon',
-        desc: `Idle Pet Clinic is the ultimate game for animal lovers where the players take on the role of a compassionate veterinarian and can build their very own pet clinic. Players can provide essential services like grooming, bathing, vaccination, and nail cutting to adorable pets in need. `,
-        genre: 'Casual',
-        releaseDate: '11th July 2023',
-        rating: 4.6,
-        price: '0.00',
-        link: "https://play.google.com/store/apps/details?id=com.creativefungames.pawtoon"
-    },
-    {
-        id: "6",
         image: 'https://i.ibb.co/1JcvHXs/unnamed-5.webp',
         name: 'Super Bro: Adventure Run Game',
         desc: `Super Bro Go is a fun running arcade game in which you have to save yourself from obstacles and reach the castle in every level. The game contain well-designed levels in order to trick the players with different challenges and obstacles that makes the game super fun.`,
@@ -64,10 +66,11 @@ export const portfolio = [
         releaseDate: '3rd January 2022',
         rating: 4.6,
         price: '0.00',
-        link: "https://play.google.com/store/apps/details?id=com.gamenotch.superbro.go.adventure.run"
+        link: "https://play.google.com/store/apps/details?id=com.gamenotch.superbro.go.adventure.run",
+        publisher: "Game Notch"
     },
     {
-        id: "7",
+        id: "4",
         image: 'https://i.ibb.co/Dzc6Tdk/Red-Jumping-Ball.webp',
         name: 'Red Jumping Roller Bounce Ball',
         desc: `The Red Jumping Ball game is a gun game where the player has to clear the land, defeat the enemies, collect the stars, and then fight with the bosses in order to save their friends from red jumping ball games. Save your friends from the evil bosses who kidnapped them and their companions in an adventure ball game. In this bounce tales game, all you need to do is to save yourself from obstacles, challenging traps, moving lasers, and enemies with thrilling powers.`,
@@ -75,10 +78,11 @@ export const portfolio = [
         releaseDate: '7th February 2023',
         rating: 4.5,
         price: '0.00',
-        link: "https://play.google.com/store/apps/details?id=com.gn.jumping.ballgames"
+        link: "https://play.google.com/store/apps/details?id=com.gn.jumping.ballgames",
+        publisher: "Game Notch"
     },
     {
-        id: "8",
+        id: "5",
         image: 'https://i.ibb.co/ydqYbcn/unnamed-5.webp',
         name: 'Police Chase 2 - Thief Simulator',
         desc: `A really interesting and amusing game for arcade lovers. Gets your minds refreshed and active to escape the police cars. Chased by police cars, it’s not uncomplicated to run off of police wheels.`,
@@ -86,10 +90,11 @@ export const portfolio = [
         releaseDate: '7th April 2020',
         rating: 5,
         price: '0.00',
-        link: "https://play.google.com/store/apps/details?id=com.futuristicGames.PoliceChase2"
+        link: "https://play.google.com/store/apps/details?id=com.futuristicGames.PoliceChase2",
+        publisher: "Futuristic Games"
     },
     {
-        id: "9",
+        id: "6",
         image: 'https://i.ibb.co/HGDtGc4/DA964-B52-5-C49-40-EB-8692-93628-AEBB320.png',
         name: 'Tap Hop Adventure',
         desc: `Embark on a hooping adventure with "Tap Hop Adventure" – Test your timing and skill as you navigate an array of unique balls through diverse environments and tricky obstacles, aiming to score by getting them into suspended hoops.`,
@@ -97,10 +102,11 @@ export const portfolio = [
         releaseDate: '31st August 2023',
         rating: 4.5,
         price: '0.00',
-        link: "https://apps.apple.com/us/app/tap-hop-adventure/id6451442430"
+        link: "https://apps.apple.com/us/app/tap-hop-adventure/id6451442430",
+        publisher: "App Central"
     },
     {
-        id: "10",
+        id: "7",
         image: 'https://i.ibb.co/0rLqphQ/unnamed-2.webp',
         name: 'Windy Paratroopers',
         desc: `Adjust and aim with your catapult, and release to shoot your paratroopers.. Open your parachute and navigate to land score a perfect landing and fight enemies to take over an island.`,
@@ -112,7 +118,7 @@ export const portfolio = [
         publisher: "Tiny Kraken Games"
     },
     {
-        id: "11",
+        id: "8",
         image: 'https://i.ibb.co/mzVWQkd/unnamed.webp',
         name: 'Magnet Man',
         desc: `The Magnet man attracts everything towards himself while escaping giants. Release to blast all objects back and kill the giants chasing you.`,
@@ -124,7 +130,7 @@ export const portfolio = [
         publisher: "Tiny Kraken Games"
     },
     {
-        id: "12",
+        id: "9",
         image: 'https://i.ibb.co/W5yKqQT/unnamed-1.webp',
         name: 'Earthquake Tester',
         desc: `Make the building safe by adding structural parts. Tap the earthquake button to test your structure. Win and earn if it does not fall.`,
@@ -136,7 +142,7 @@ export const portfolio = [
         publisher: "Tiny Kraken Games"
     },
     {
-        id: "13",
+        id: "10",
         image: 'https://i.ibb.co/vvsvPMc/unnamed.webp',
         name: 'Cube Battleship',
         desc: `Build a base with your deck. Place your buildings on the map to attack and defend your territory. Use your weapon cards to aim and attack on the enemy grounds to conquer. Protect your King, castle and defenses, level up your heroes deck and win PvP battles!`,

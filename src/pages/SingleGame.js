@@ -69,11 +69,11 @@ const Container = styled.div`
 `;
 
 const SingleGame = () => {
-  const {id} = useParams(null);
+  const {id} = useParams();
   const [game, setGame] = useState({});
 
   useEffect(() => {
-    setGame(portfolio[id]);
+    setGame(portfolio[id-1]);
   }, []);
 
   useEffect(() => {
